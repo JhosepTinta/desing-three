@@ -126,7 +126,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(128, 128, 128, 0.7); /* Color plomo con opacidad del 50% */
+    background-color: rgba(128, 128, 128, 0.403); /* Color plomo con opacidad del 50% */
 }
 
 .main-slogan p{
@@ -199,7 +199,7 @@ div .subtitle {
 
 .experiences {
     padding: 50px 0;
-    background-image: url(./assets/images/fondo_experience2.jpeg);
+    background-image: url(./assets/images/fondo_experience3.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -235,7 +235,7 @@ div .subtitle {
 
 footer {
     height: 50vh;
-    background-image: url(./assets/images/fondo.jpg);
+    background-image: url(./assets/images/fondo_experience3.jpeg);
     background-position: center;
     background-size: cover;
     display: flex;
