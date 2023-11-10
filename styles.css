@@ -7,8 +7,8 @@
 :root {
     --color-font: white;
     --color-white: white;
-    --color-principal: rgb(165,42,42);
-    --color-principal-opacity: rgba(165, 42, 42, 0.7);
+    --color-principal: #2D65A6;
+    --color-principal-opacity: #2d65a6a9;
     --color-secundary: rgb(0, 0, 0);
     --color-secundary-opacity: rgba(0, 0, 0, 0.7);
     --size-font: 1rem;
@@ -199,7 +199,7 @@ div .subtitle {
 
 .experiences {
     padding: 50px 0;
-    background-image: url(./assets/images/banner.jpg);
+    background-image: url(./assets/images/fondo_experience2.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
