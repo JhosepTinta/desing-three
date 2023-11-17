@@ -14,6 +14,14 @@
     --size-font: 1rem;
 }
 
+.ss {
+    padding: 2px 0 !important;
+}
+
+.hidden {
+    display: none;
+}
+
 .center-container {
     width: 85%;
     margin: 0 auto;
@@ -29,6 +37,10 @@
     justify-content: space-between;
     background-color: var(--color-principal);
     padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header-logo {
@@ -74,6 +86,7 @@
 
 .main-banner {
     position: relative;
+    margin-bottom: 30px;
     width: 100%;
     height: 85vh;
 }
@@ -113,6 +126,7 @@
 }
 
 .main-slogan {
+    margin-top: 30px;
     position: relative;
     background-image: url(./assets/images/fondo_casco.jpeg);
     background-position: center;
@@ -137,6 +151,36 @@
     font-weight: 400;
     text-align: center;
     color: var(--color-white);
+}
+
+.values-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.value {
+    width: 13rem;
+    height: 17rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.value-text {
+    margin: 20px;
+    color: white;
+}
+
+.value-background {
+    background-color: #1E6CB6;
 }
 
 .services {

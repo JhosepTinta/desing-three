@@ -67,3 +67,41 @@ setInterval(() => {
         counter = 0;
     }
 }, 3000);
+
+
+//function values
+const listCard = document.querySelectorAll(".value");
+console.log(listCard)
+listCard.forEach((card)=>{
+    card.addEventListener('mouseover',()=>{
+        const img = card.children[0];
+        const title = card.children[1];
+        const text = card.children[2];
+        img.classList.add('hidden');
+        title.classList.add('hidden');
+        text.classList.remove('hidden');
+        card.classList.add('value-background');
+    })
+    card.addEventListener('mouseout',()=>{
+        const img = card.children[0];
+        const title = card.children[1];
+        const text = card.children[2];
+        img.classList.remove('hidden');
+        title.classList.remove('hidden');
+        text.classList.add('hidden');
+        card.classList.remove('value-background');
+    })
+})
+
+window.onscroll = function () {
+    var y = window.scrollY;
+    if (y > 30) {
+      var d = document.getElementById("header-container");
+      d.classList.add("ss")
+      console.log("cambiar padding",d.classList)
+    } else {
+      var s = document.getElementById("header-container");
+      s.classList.remove("ss");
+      console.log("todo normal",s)
+    }
+  };

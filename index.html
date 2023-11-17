@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
     <title>Desing Three</title>
 </head>
 <body>
-    <header class="header-container">
+    <header id="header-container" class="header-container">
         <div class="center-container">
             <div class="header-logo">
                 <img src="./assets/images/logoGaia3.png" alt="">
@@ -19,16 +19,19 @@
             <nav class="header-nav">
                 <ul>
                     <li class="header-nav-item">
-                        <a href="">SERVICIOS</a>
+                        <a href="#services">SERVICIOS</a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="">EXPERIENCIA</a>
+                        <a href="./pages/offers.html">OFERTAS</a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="">CONOCENOS</a>
+                        <a href="#experiences">EXPERIENCIA</a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="">CONTACTENOS</a>
+                        <a href="./pages/know_us.html">CONOCENOS</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#contact">CONTACTENOS</a>
                     </li>
                 </ul>
             </nav>
@@ -49,12 +52,40 @@
                 </a>
             </article>
         </section>
+        
+        <section class="values-container">
+            <div class="value">
+                <img src="./assets/icons/value.svg" alt="">
+                <p>COMPROMISO</p>
+                <p class="value-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. um perspiciatis odio sunt quo molestia.</p>
+            </div>
+            <div class="value">
+                <img src="./assets/icons/value.svg" alt="">
+                <p>COMPROMISO</p>
+                <p class="value-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. um perspiciatis odio sunt quo molestia.</p>
+            </div>
+            <div class="value">
+                <img src="./assets/icons/value.svg" alt="">
+                <p>COMPROMISO</p>
+                <p class="value-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. um perspiciatis odio sunt quo molestia.</p>
+            </div>
+            <div class="value">
+                <img src="./assets/icons/value.svg" alt="">
+                <p>COMPROMISO</p>
+                <p class="value-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. um perspiciatis odio sunt quo molestia.</p>
+            </div>
+            <div class="value">
+                <img src="./assets/icons/value.svg" alt="">
+                <p>COMPROMISO</p>
+                <p class="value-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. um perspiciatis odio sunt quo molestia.</p>
+            </div>
+        </section>
         <section class="main-slogan">
             <div class="center-container">
                 <p>Estamos comprometidos con entregar el mejor servicio, creemos que la seguridad es el primer paso para salir sin preocuparte.</p>
             </div>
         </section>
-        <section class="services">
+        <section id="services" class="services">
             <div class="center-container">
                 <h2 class="subtitle">Servicios</h2>
                 <article class="services-continaer">
@@ -70,7 +101,7 @@
                 </article>
             </div>
         </section>
-        <section class="experiences">
+        <section id="experiences" class="experiences">
             <div class="background-opacity"></div>
             <div class="center-container">
                 <h2 class="subtitle color-white">Nuestra Experiencia</h2>
@@ -96,7 +127,7 @@
                 </article>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
 
         </section>
     </main>

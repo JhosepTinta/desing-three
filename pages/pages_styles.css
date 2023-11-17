@@ -1,0 +1,30 @@
+.offer {
+    width: 300px;
+    border: 3px solid var(--color-principal);
+}
+
+.offer img{
+    width: 100%;
+}
+
+.offer .offer-description{
+    padding: 20px;
+}
+
+.offer-description ul {
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+
+.offer-description .offer-price {
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.offer-description button {
+    width: 100%;
+    padding: 5px 0;
+    background-color: var(--color-principal);
+    border: none;
+    color: var(--color-font);
+}
