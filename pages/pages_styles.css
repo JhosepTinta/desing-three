@@ -1,6 +1,13 @@
 .offer {
     width: 300px;
     border: 3px solid var(--color-principal);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px grey;
+}
+
+.offer-container {
+    margin-bottom: 30px;
 }
 
 .offer img{
@@ -27,4 +34,8 @@
     background-color: var(--color-principal);
     border: none;
     color: var(--color-font);
+}
+
+.btn-line {
+    border-bottom: 3px solid var(--color-secundary-opacity);
 }

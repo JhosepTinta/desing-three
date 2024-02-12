@@ -11,6 +11,7 @@
     --color-principal-opacity: #2d65a6a9;
     --color-secundary: rgb(0, 0, 0);
     --color-secundary-opacity: rgba(0, 0, 0, 0.7);
+    --color-principal-more-opacity: #2d65a672;
     --size-font: 1rem;
 }
 
@@ -19,7 +20,7 @@
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .center-container {
@@ -156,6 +157,7 @@
 .values-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     position: relative;
     width: 80%;
     margin: auto;
@@ -171,7 +173,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-right: 50px;
 }
 
 .value-text {
@@ -208,14 +209,16 @@ div .subtitle {
 .service-description {
     font-size: var(--size-font);
     margin-bottom: 1.5rem;
+    height: 100px;
 }
 
 .service-img {
     width: 100%;
     height: 400px;
     margin-bottom: 0.5rem;
-    background-color: yellowgreen;
+    background-color: var(--color-secundary-opacity);
     border: 4px solid #333;
+    object-fit: cover;
 }
 
 .service-paginator {
@@ -257,12 +260,15 @@ div .subtitle {
 .experiences-item {
     width: calc((100% / 4) - 10px);
     height: 500px;
-    background-color: aqua;
+    background-color: var(--color-principal-opacity);
     position: relative;
     border: 4px solid var(--color-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.experiences-item p {
+.experiences-title {
     display: block;
     padding: 5px 15px;
     background-color: var(--color-principal);
@@ -272,9 +278,193 @@ div .subtitle {
     color: var(--color-white);
 }
 
-.contact {
+.experiences-text {
+    padding: 15px;
+    text-align: justify;
+    color: var(--color-white);
+}
+
+.experiences-item img {
     width: 100%;
-    height: 500px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.achievements {
+    
+}
+
+.achievments-description {
+   margin-bottom: 10px; 
+}
+
+.achievements-container {
+    width: 20px;
+    height: 30px;
+    background-color: red;
+}
+
+.achievements-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.achievements-item {
+    width: calc((100% / 2) - 10px);
+    height: 400px;
+    background-color: var(--color-secundary-opacity);
+    position: relative;
+    border: 4px solid var(--color-principal);
+}
+
+.act-1 {
+    background-image: url(./assets/images/logro1.jpg);
+    background-size: cover;
+}
+
+.act-2 {
+    background-image: url(./assets/images/logro2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.act-3 {
+    background-image: url(./assets/images/logro3.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.achievements-central {
+    display: flex;
+    justify-content: center;
+}
+
+.achievements-item-central {
+    width: calc((100% / 2) - 100px);
+    height: 400px;
+    background-color: var(--color-secundary-opacity);
+    position: relative;
+    border: 4px solid var(--color-principal);
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+}
+
+.contact-form-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -20;
+}
+
+.contact-form-image-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: var(--color-principal-more-opacity);
+}
+
+.contact-form-container {
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: -30vh;
+    z-index: 10;
+}
+
+.contact-title {
+    font-size: 2rem !important;
+    font-weight: 500 !important;
+    color: var(--color-white) !important;
+}
+
+.contact-form{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.contact-form-input-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.contact-form-input-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.contact-form-input-3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.contact-form-input-4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.contact-form-send {
+    grid-area: 3 / 1 / 4 / 3;
+    background-color: rgb(47, 193, 47);
+    color: var(--color-white);
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.form-input label {
+    font-size: 1.2rem;
+    color: rgb(210, 210, 210);
+}
+
+.form-input input {
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 3px solid var(--color-principal);
+}
+
+.form-select label {
+    font-size: 1.2rem;
+    color: rgb(210, 210, 210);
+}
+
+.form-select select {
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 3px solid var(--color-principal);
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.space-between label {
+    margin-right: 10px;
 }
 
 footer {
@@ -311,7 +501,7 @@ footer {
 
 .footer-logo-container img {
     width: 50%;
-    height: 60px;
+    height: 4rem;
     margin-bottom: 20px;
 }
 
@@ -393,6 +583,7 @@ div .color-white {
 .ver-mas {
     all: initial;
     color: var(--color-white);
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -412,14 +603,71 @@ div .color-white {
     margin-left: 5px;
 }
 
+.bold {
+    font-weight: 600;
+}
+
+.line-full {
+    padding: 1px;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: var(--color-secundary-opacity);
+}
+
+.mapa{
+    width: 100%;
+    height: 500px;
+}
+
 /* Estilos responsivos */
 @media only screen and (max-width: 1200px) {
     .header-container {
         background-color: rgb(188, 247, 26);
     }
     .footer-logo-container img {
-        width: 70%;
+        width: 90%;
     }
+    .main-banner-slogan {
+        top: 5%;
+        width: 55%;
+    }
+    .slogan {
+        font-size: 2.5rem;
+    }
+    .value {
+        width: 11rem;
+    }
+    .value img{
+        width: 5rem;
+    }
+    .value p{
+        font-size: 0.8rem;
+    }
+    .value-text {
+        margin: 20px;
+        color: white;
+    }
+    
+    
+    .footer-information-container h3 {
+        font-size: 1.4rem;
+    }
+    
+    .footer-information-container ul {
+        font-size: 1rem;
+        padding: 15px 0;
+        margin: 15px 0;
+    }
+    
+    .footer-information-container ul li {
+        list-style: none;
+    }
+    
+    .footer-information-container div {
+        display: flex;
+        gap: 10px;
+    }
+    
 }
 
 @media only screen and (max-width: 1000px) {
@@ -428,15 +676,23 @@ div .color-white {
     }
 
     .header-logo {
-        width: 30%;
+        width: 25%;
     }
 
-    .main-banner-slogan {
-        width: 30%;
+    .header-nav-item a{
+        font-size: 0.79rem;
     }
 
     .slogan {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .value {
+        width: 9rem;
+    }
+
+    footer {
+        height: 70vh;
     }
 
     .footer-logo-container {
@@ -461,12 +717,35 @@ div .color-white {
         font-size: 2rem;
     }
 
+    .values-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .value {
+        width: 10rem;
+        height: 12rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .main-slogan p {
+        font-size: 1rem;
+    }
+
+    .experiences-item {
+        width: calc((100% / 2) - 10px);
+        height: 400px;
+    }
+
     .footer-information-container h3 {
         font-size: 1.4rem;
     }
     
     .footer-information-container ul {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .header-nav-item a{
@@ -534,13 +813,37 @@ div .color-white {
         font-size: 0.6rem;
     }
 
+    .main-banner {
+        height: 50vh;
+    }
+
     .main-banner-slogan {
-        width: 40%;
+        width: 50%;
+    }
+
+    .mesage {
+        font-size: 1.2rem;
     }
 
     .slogan {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 2.5rem;
+    }
+
+    .value {
+        width: 6rem;
+        height: 12rem;
+    }
+
+    .main-slogan p{
+        font-size: 1.2rem;
+    }
+
+    .value img{
+        width: 4rem;
+    }
+    .value p{
+        font-size: 0.5rem;
     }
 
     .footer-logo-container {
